@@ -10,6 +10,8 @@ The classifier distinguishes two classes: 0 for ham emails and 1 for spam emails
 
 The training dataset consists of 1000 rows and 55 columns:
 
-- Each row corresponds to one email message.
+- Each row corresponds to one email or message.
 - The first column is the response variable, i.e. 0 or 1.
 - The other 54 columns are features that correspond to 54 different keywords and special characters.
+
+The testing dataset has 500 emails to be classified, and is used for testing accuracy against unseen data.
