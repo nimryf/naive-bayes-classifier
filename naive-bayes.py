@@ -253,17 +253,20 @@ def test_likelihoods(training_spam):
         return False
 
 
-# Example use of classifier.
-here = os.path.dirname(os.path.abspath(__file__))
+def example_use():
+    here = os.path.dirname(os.path.abspath(__file__))
 
-training_spam = os.path.join(here, "data\\training_spam.csv")
-testing_spam = os.path.join(here, "data\\testing_spam.csv")
+    training_spam = os.path.join(here, "data\\training_spam.csv")
+    testing_spam = os.path.join(here, "data\\testing_spam.csv")
 
-train_file = np.loadtxt(open(training_spam, "r"), delimiter=",")
-test_file = np.loadtxt(open(testing_spam, "r"), delimiter=",")
+    train_file = np.loadtxt(open(training_spam, "r"), delimiter=",")
+    test_file = np.loadtxt(open(testing_spam, "r"), delimiter=",")
 
-print("Accuracy against training set: ", 100 *
-      test_classifier(train_file), "%\n")
+    print("Accuracy against training set: ", 100 *
+          test_classifier(train_file), "%\n")
 
-print("Accuracy against testing set: ", 100 *
-      test_classifier_2(train_file, test_file), "%\n")
+    print("Accuracy against testing set: ", 100 *
+          test_classifier_2(train_file, test_file), "%\n")
+
+
+example_use()
