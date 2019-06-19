@@ -20,4 +20,4 @@ The testing dataset has 500 emails to be classified, and is used for testing acc
 
 - Download Python and an appropriate IDE, and simply run the code.
 - Function _example_use()_ shows how it's used and also tests for its accuracy.
-- Running the code, which just calls example_use(), should produce two measures of accuracy.
+- Running the code, which just calls _example_use()_, should produce two measures for accuracy of classifications.
